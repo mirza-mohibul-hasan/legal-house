@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        pcolor: '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FlowBite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/81f5800f56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="mx-auto md:w-[80%] mt-5 mb-20">
+        <!-- Navigation Section -->
+        <nav class="bg-white px-3 sm:px-1 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="flex gap-0">
+                    <img src="images/logo2.png" class="h-6 sm:h-9" alt="">
+                </a>
+                <div class="flex md:order-2">
+
+                    <button type="button"
+                        class="text-white bg-pcolor font-medium rounded text-sm px-3 py-1 md:px-7 md:py-2.5 text-center mr-3 md:mr-0"
+                        data-modal-target="defaultModal" data-modal-toggle="defaultModal">Free
+                        Consultation</button>
+
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pcolor md:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pcolor md:p-0">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pcolor md:p-0">Cases</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pcolor md:p-0">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pcolor md:p-0">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Section -->
+        <div class="bg-local bg-no-repeat bg-cover w-[100%] h-[100vh] flex justify-center items-center rounded-md"
+            style="background-image: url(images/banner.png);">
+            <div class="text-white w-[95%]  md:w-[60%] text-center">
+                <h1 class=" text-3xl md:text-7xl pb-5 font-semibold">We Provide Effective Legal Solutions</h1>
+                <p>Legal Solutions is a dynamic law firm with a clear vision of the future. We are a firm that
+                    understands what clients need today and, equally importantly, what they will need tomorrow.</p>
+
+                <div class="flex justify-between gap-1 md:flex-row flex-col pt-2">
+                    <input type="text" placeholder="Search your services" class="rounded-md flex-1 border-none">
+                    <input type="submit" value="Search" class="rounded-md bg-pcolor py-2 px-10 ">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main Section -->
+    <main class="mx-auto md:w-[80%] mt-5">
+        <!-- Practice Area -->
+        <section class="text-center px-6">
+            <h1 class="font-semibold text-3xl">The Legal Practice Area</h1>
+            <p class="sm:w-[60%] mx-auto mt-4">There are several types of law you'll come across during your legal
+                studies. On this page, you'll find a comprehensive list of different areas of law you can choose to
+                specialise in.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center mt-7 gap-y-5">
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/business.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Business Law</h1>
+                    <p>Corporate law is the body of law governing the rights, relations, and conduct of persons,
+                        companies, organizations and businesses.</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/criminal.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Criminal Law</h1>
+                    <p>Criminal law prescribes conduct perceived as threatening, harmful, health, safety, and moral
+                        welfare of people inclusive of one's self.</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/business.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Child Support</h1>
+                    <p>In general, child support is designed to maintain a child's living standard and ensure all their
+                        basic needs are covered</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/business.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Education Law</h1>
+                    <p>Education law refers to the statutes, regulations, cases, and policies governing education and
+                        the resolution of disputes in educational institutions.</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/business.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Divorce Law</h1>
+                    <p>Divorce entails the cancelation or reorganisation of the legal responsibilities of marriage by
+                        dissolving the bonds of marriage between a married couple.</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+                <div class="md:w-[65%] mx-auto">
+                    <img src="images/business.png" alt="" class="w-auto mx-auto">
+                    <h1 class="text-3xl font-semibold text-[#414040] py-3">Tax Law</h1>
+                    <p>A tax is a mandatory fee or financial charge levied by any government on an individual for public
+                        works providing the best facilities and infrastructure.</p>
+                    <p class="bg-pcolor rounded-[50%] w-5 mx-auto my-5"><i
+                            class="fa-sharp fa-solid fa-arrow-right text-white"></i></p>
+                </div>
+            </div>
+        </section>
+        <!-- Slider -->
+        <section class="mt-8 text-center">
+            <h1 class="font-semibold text-3xl px-3">What Our Client Say</h1>
+            <p class="sm:w-[60%] mx-auto my-4 px-5">The client review meeting is an opportunity to showcase the planning
+                you have done or will do for them. It's also a chance to bridge clients' understanding around financial
+                goals and work with them to collaboratively address any unrealistic goals or goal timelines.
+            </p>
+            <div id="default-carousel" class="relative rounded-md mx-2" data-carousel="static"
+                style="background-image: url(images/slider-1.jpg);">
+                <!-- Carousel wrapper -->
+                <div class="relative h-72 overflow-hidden rounded-lg md:h-96 bg-[#030303a0]">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            <div class="block mx-auto w-100 py-12">
+                                <img src="images/profile.png" alt="" class="w-14 mx-auto">
+                                <h1 class="text-lg">Awlad Hossain</h1>
+                                <p class="text-xs">UIX Designer</p>
+                                <p class="text-xs"> A review is an evaluation of a publication, product, service, or
+                                    company or a critical take on current affairs in literature, politics or culture.
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            <div class="block mx-auto w-100 py-12">
+                                <img src="images/profile.png" alt="" class="w-14 mx-auto">
+                                <h1 class="text-lg">Jhanker Hossain</h1>
+                                <p class="text-xs">Web Designer</p>
+                                <p class="text-xs"> Web design encompasses many different skills and disciplines in the
+                                    production and maintenance of websites. The different areas of web design include
+                                    web graphic design; user interface design;
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            <div class="block mx-auto w-100 py-12">
+                                <img src="images/profile.png" alt="" class="w-14 mx-auto">
+                                <h1 class="text-lg">Mohibul Hasan</h1>
+                                <p class="text-xs">Graphics Deigner</p>
+                                <p class="text-xs"> A review is an evaluation of a publication, product, service, or
+                                    company or a critical take on current affairs in literature, politics or culture.
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-7 h-1" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-7 h-1" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-7 h-1" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-none dark:bg-gray-800/30 group-hover:bg-white/50 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-gray-800/30 group-hover:bg-white/50 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <!-- Faq Section -->
+        <section class="mt-8">
+            <h1 class="font-semibold text-3xl text-center">Freequently Asked Any Questions</h1>
+            <p class=" text-center sm:w-[50%] mx-auto mt-4 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Totam voluptate voluptas nihil enim alias
+                pariatur rem aspernatur praesentium laborum maiores?</p>
+            <div class="flex items-center justify-between sm:flex-row flex-col-reverse mt-8">
+                <div class="sm:w-[50%] w-[95%]">
+
+                    <div id="accordion-collapse" data-accordion="collapse">
+                        <!-- Accordian 1 -->
+                        <div class="bg-neutral-100 rounded-xl my-3">
+                            <h2 id="accordion-collapse-heading-1">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500"
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span>1. What is the difference between flexbox and grid?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="p-5 font-light">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flexbox work with one dimensional
+                                        layout and grid worked with two dimensional layout.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordian 2 -->
+                        <div class="bg-neutral-100 rounded-xl my-3">
+                            <h2 id="accordion-collapse-heading-2">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500"
+                                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span>2. Why media query is so important?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 font-light">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Media Query is used to render or
+                                        adapt different condition such as display resoulation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordian 3 -->
+                        <div class="bg-neutral-100 rounded-xl my-3">
+                            <h2 id="accordion-collapse-heading-3">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500"
+                                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span>3. What is CSS box model?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 font-light">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">CSS box model refers to how HTML
+                                        elements are modeled in browser engines and how the dimensions of those HTML
+                                        elements are derived from CSS properties.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordian 4 -->
+                        <div class="bg-neutral-100 rounded-xl my-3">
+                            <h2 id="accordion-collapse-heading-4">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500"
+                                    data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>What is semantic tag?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div class="p-5 font-light">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">emantic HTML is the use of HTML
+                                        markup to reinforce the semantics, or meaning, of the information in web pages
+                                        and web applications rather than merely to define its presentation or look.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="w-[50%]">
+                    <img src="images/faq.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Contact With us -->
+        <section class="mt-8">
+            <h1 class="font-semibold text-3xl text-center">Contact Us</h1>
+            <p class=" text-center sm:w-[50%] mx-auto mt-4 mb-5">For free consultation and premium service ,contact with
+                us</p>
+            <div class="flex flex-col md:flex-row gap-4 w-auto mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 w-[95%] md:w-[50%] gap-0 text-center rounded mx-auto">
+                    <div class="flex justify-center items-center bg-[#F3F3F3] sm:border-r">
+                        <div>
+                            <img src="images/location.png" alt="" class="w-auto mx-auto">
+                            <h1 class="font-semibold text-xl mb-3">Address</h1>
+                            <p>A108 Adam Street,<br>New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center bg-[#F3F3F3] ">
+                        <div>
+                            <img src="images/call.png" alt="" class="w-auto mx-auto">
+                            <h1 class="font-semibold text-xl mb-3">Call Us</h1>
+                            <p>+88 01750000000,<br>+88 01750000000</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center bg-[#F3F3F3] sm:border-t sm:border-r">
+                        <div>
+                            <img src="images/email.png" alt="" class="w-auto mx-auto">
+                            <h1 class="font-semibold text-xl mb-3">Email Us</h1>
+                            <p>info@gmail.com,<br>info@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center bg-[#F3F3F3] sm:border-t">
+                        <div>
+                            <img src="images/time.png" alt="" class="w-auto mx-auto">
+                            <h1 class="font-semibold text-xl mb-3">Working Hours</h1>
+                            <p>Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[95%] md:w-[50%] mx-auto">
+                    <input type="text" name="" id="" placeholder="Your name"
+                        class="w-full border-none bg-[#F3F3F3] rounded-lg mb-4"> <br>
+                    <input type="email" name="" id="" placeholder="Your Email"
+                        class="w-full border-none bg-[#F3F3F3] rounded-lg mb-4"><br>
+                    <input type="text" name="" id="" placeholder="Subject"
+                        class="w-full border-none bg-[#F3F3F3] rounded-lg mb-4"> <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
+                        class="w-full border-none bg-[#F3F3F3] rounded-lg mb-4 p-5"></textarea>
+                    <input type="submit" value="Send Message" class="bg-pcolor w-full py-3 text-white rounded-lg">
+                </div>
+            </div>
+        </section>
+        <!-- Main modal -->
+        <div id="defaultModal" tabindex="-1" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <div class="relative bg-white rounded-lg shadow py-5">
+                    <div class="flex justify-center items-cente rounded-2xl">
+                        <div class="py-3">
+                            <h1 class="font-semibold text-xl mb-3">Call Us</h1>
+                            <p>+88 01750000000,<br>+88 01750000000</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center sm:border-t sm:border-r  rounded-2xl">
+                        <div class="py-3">
+                            <h1 class="font-semibold text-xl mb-3">Email Us</h1>
+                            <p>info@gmail.com,<br>info@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#111111] py-8 mt-10">
+        <section class="grid grid-cols-1 sm:grid-cols-4 w-[80%] mx-auto gap-8 py-8">
+            <div>
+                <img src="images/logo.png" alt="" class="">
+                <p class="text-white mt-4">Justice, in its broadest sense, is the principle that people receive that
+                    which they deserve, with the interpretation of what then constitutes "deserving".</p>
+            </div>
+            <div class="text-white">
+                <h1 class="text-2xl">Usefull Link</h1>
+                <ul class="list-none text-[#CFCFCF] py-2">
+                    <li>Homes</li>
+                    <li>About Us</li>
+                    <li>Cases</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <h1 class="text-2xl mb-3">Contact Now</h1>
+                <p class="text-[#CFCFCF]">555 4th 5t NW, Washington <br>DC 20530, United States</p>
+                <p class="text-[#CFCFCF] py-3">+88 01750 000 000 <br>+88 01750 000 000</p>
+                <p class="text-[#CFCFCF]">info@gmail.com <br>
+                    info@gmail.com</p>
+            </div>
+            <div class="text-white">
+                <h1 class="text-2xl">Subscribe</h1>
+                <p class="text-[#CFCFCF] py-5">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+
+                <form>
+                    <div class="bg-white flex justify-between rounded-xl">
+                        <input type="text" class="border-none flex-1 rounded-lg" placeholder="Email Address">
+                        <button class="bg-pcolor w-12 rounded-lg"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
